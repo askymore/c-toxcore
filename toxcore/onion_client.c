@@ -1804,7 +1804,8 @@ static int onion_isconnected(const Onion_Client *onion_c)
     return 0;
 }
 
-#define ONION_CONNECTION_SECONDS 3
+/*increase from 3 to 10,modified by askymore*/
+#define ONION_CONNECTION_SECONDS 10
 
 /*  return 0 if we are not connected to the network.
  *  return 1 if we are connected with TCP only.
